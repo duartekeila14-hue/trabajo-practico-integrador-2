@@ -1,16 +1,44 @@
-# React + Vite
+# Sistema de Gestion de Blog Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend desarrollado con React, Vite y Tailwind CSS para el Trabajo Practico Integrador.
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js
+- npm
+- Backend del Trabajo Practico Integrador N° I en ejecucion
 
-## React Compiler
+## Configuracion
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Instalar dependencias:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Crear un archivo `.env` en la raiz si el backend no usa `http://localhost:3000`:
+
+```env
+VITE_API_URL=http://localhost:3000
+```
+
+El backend debe aceptar credenciales desde el origen `http://localhost:5173`.
+
+## Ejecutar
+
+```bash
+npm run dev
+```
+
+Abrir `http://localhost:5173`.
+
+## Verificacion
+
+```bash
+npm run lint
+npm run build
+```
+
+## Backend
+
+Trabajo Practico Integrador N° I: agregar aqui la URL del repositorio del backend utilizado.
