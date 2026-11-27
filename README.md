@@ -16,7 +16,7 @@ Instalar dependencias:
 npm install
 ```
 
-Crear un archivo `.env` en la raiz si el backend no usa `http://localhost:3000`:
+Crear un archivo `.env` en la raiz a partir de `.env.example` si el backend no usa `http://localhost:3000`:
 
 ```env
 VITE_API_URL=http://localhost:3000
